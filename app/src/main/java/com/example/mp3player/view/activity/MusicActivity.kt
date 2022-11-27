@@ -1,4 +1,4 @@
-package com.example.mp3player
+package com.example.mp3player.view.activity
 
 import android.content.Intent
 import android.media.MediaPlayer
@@ -8,6 +8,8 @@ import android.util.Log
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mp3player.R
+import com.example.mp3player.data.Music
 import com.example.mp3player.databinding.ActivityMusicBinding
 import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
@@ -59,9 +61,11 @@ class MusicActivity : AppCompatActivity() {
                     mediaPlayer?.seekTo(progress)
                 }
             }
+
             override fun onStartTrackingTouch(p0: SeekBar?) {
                 Log.d("musicplayer", "seekbar-play")
             }
+
             override fun onStopTrackingTouch(p0: SeekBar?) {
                 Log.d("musicplayer", "seekbar-stop")
             }

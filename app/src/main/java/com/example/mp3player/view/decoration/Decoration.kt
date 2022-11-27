@@ -1,4 +1,4 @@
-package com.example.mp3player
+package com.example.mp3player.view.decoration
 
 import android.graphics.Canvas
 import android.graphics.Color

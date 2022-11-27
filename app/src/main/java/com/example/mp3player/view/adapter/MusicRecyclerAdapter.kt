@@ -1,4 +1,4 @@
-package com.example.mp3player
+package com.example.mp3player.view.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -8,7 +8,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mp3player.R
+import com.example.mp3player.data.DBHelper
+import com.example.mp3player.data.Music
 import com.example.mp3player.databinding.AdapterMusicBinding
+import com.example.mp3player.view.activity.MainActivity
+import com.example.mp3player.view.activity.MusicActivity
 import java.text.SimpleDateFormat
 
 class MusicRecyclerAdapter(val context: Context, val musicList: MutableList<Music>?) :
@@ -33,7 +38,7 @@ class MusicRecyclerAdapter(val context: Context, val musicList: MutableList<Musi
         binding.tvArtist.text = music?.artist
         binding.tvTitle.text = music?.title
         binding.tvDuration.text = SimpleDateFormat("mm:ss").format(music?.duration)
-        val bitmap = music?.getAlbumImage(context, MusicRecyclerAdapter.ALBUM_SIZE)
+        val bitmap = music?.getAlbumImage(context, ALBUM_SIZE)
         if (bitmap != null) {
             binding.ivAlbumArt.setImageBitmap(bitmap)
         } else {

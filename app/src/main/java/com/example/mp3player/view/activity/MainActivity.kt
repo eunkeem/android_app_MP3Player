@@ -1,4 +1,4 @@
-package com.example.mp3player
+package com.example.mp3player.view.activity
 
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -12,7 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mp3player.R
+import com.example.mp3player.data.DBHelper
+import com.example.mp3player.data.Music
 import com.example.mp3player.databinding.ActivityMainBinding
+import com.example.mp3player.view.adapter.MusicRecyclerAdapter
+import com.example.mp3player.view.decoration.Decoration
 
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null

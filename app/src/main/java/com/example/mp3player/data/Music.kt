@@ -1,4 +1,4 @@
-package com.example.mp3player
+package com.example.mp3player.data
 
 import android.content.ContentResolver
 import android.content.Context
