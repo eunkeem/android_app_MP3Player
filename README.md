@@ -15,7 +15,7 @@
 | Language | Kotlin 213-1.7.20 |
 | Editor | Android Studio 11.0.13 |
 | DBMS | SQLite 2.0 |
-| Github | https://github.com/ces0028/MusicPlayerProgram-Kotlin-Project |
+| Github |https://github.com/eunkeem/android_app_MP3Player|
 
 </br></br>
 ## Develop Period
