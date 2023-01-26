@@ -1,6 +1,6 @@
 # MP3 PLAYER (android app project)
 > __Kotlin과 SQLite를 활용한 음악 재생 어플리케이션__</br>
-디바이스의 메모리에 있는 mp3 파일을 불러 음원목록을 보여줌(RecycleView, RecycleView. Adapter<ViewHolder>, decoration)</br>
+디바이스의 메모리에 있는 mp3 파일을 불러 음원목록(RecycleView, RecycleView. Adapter<ViewHolder>, decoration)</br>
 데이터베이스(SQLite)에 음원 정보를 등록(SQLiteOpenHelper, Collection FrameWork)</br>
 음악재생 및 일시정지. SeekBar로 음악 재생위치 조정(MediaPlayer)</br>
 다음곡, 이전곡으로 넘어가기</br>
@@ -23,4 +23,5 @@
 
 </br></br>
 ## Run application
-![mp3palyer_00](https://user-images.githubusercontent.com/115531855/214858688-81addef2-fc0b-4436-a68c-77dc7fef6dd3.gif)
+
+![mp3palyer](https://user-images.githubusercontent.com/115531855/214864656-98c02d25-06c6-46cf-9dcb-b3e660d534ba.gif)
